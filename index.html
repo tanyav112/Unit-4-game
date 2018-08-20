@@ -1,18 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
-<title>Crystal Collector</title>
 
-<link rel="stylesheet" href ="assets/css/style.css">
+  <title>Crystal Collector</title>
+  <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB'
+    crossorigin='anonymous'>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
+
 <body>
-  
+  <h1>Crystals Collector!</h1>
+  <div id="Instructions">
+    <strong>Instructions</strong>
+    <p>You will be given a random number at the start of the game.</p>
+    <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+    <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the
+      random number.</p>
+    <p>The value of each crystal is hidden from you until you click on it.</p>
+    <p>Each time when the game starts, the game will change the values of each crystal.</p>
+  </div>
+  <div class="container">
+    <div class="row score-row">
+      <div id="randomNum" class="col-sm">
+        <strong>Random Number</strong>
+      </div>
+      <div id="Wins" class="score" class="col-sm">
+        <strong>Wins:</strong>
+      </div>
+      <div id="Losses" class="score" class="col-sm">
+        <strong>Losses:</strong>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row crystalRow">
+      <div class="col-sm">
+        <img id="redGem" class="gem" src="assets/images/redGem.jpg" alt="Red Gem">
+      </div>
+      <div class="col-sm">
+        <img id="blueGem" class="gem" src="assets/images/blueGem.jpg" alt="Blue Gem">
+      </div>
+      <div class="col-sm">
+        <img id="greenGem" class="gem" src="assets/images/greenGem.jpg" alt="Green Gem">
+      </div>
+      <div class="col-sm">
+        <img id="purpleGem" class="gem" src="assets/images/purpleGem.jpg" alt="Purple Gem">
+      </div>
+    </div>
+  </div>
+
+  <div class="scoreContainer">
+    <div class="col-sm" id="scoreIs">
+      <strong>Your total score is:</strong>
+    </div>
+    <div class="col-sm" id="total">
+      <strong>#</strong>
+    </div>
+  </div>
 
   <script src="assets/javascript/game.js"></script>
 </body>
+
 </html>
