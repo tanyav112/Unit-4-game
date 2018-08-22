@@ -18,6 +18,7 @@ $('.gem').on('click', function() {
   let crystalValue = $(this).attr('gem')
   total += parseInt(crystalValue)  
   $('.total').text(total)
+  console.log(this)
   gameStatus()
 })
 
@@ -32,10 +33,10 @@ function gameStatus () {
 }
 
 function reset() {
-  $('#redGem').attr('.gem', Math.floor(Math.random() * 20) +1)
-  $('#blueGem').attr('.gem', Math.floor(Math.random() * 20) + 1)
-  $('#greenGem').attr('.gem', Math.floor(Math.random() * 20) + 1)
-  $('#purpleGem').attr('.gem', Math.floor(Math.random() * 20) + 1)
+  $('#redGem').attr('gem', Math.floor(Math.random() * 20) +1)
+  $('#blueGem').attr('gem', Math.floor(Math.random() * 20) + 1)
+  $('#greenGem').attr('gem', Math.floor(Math.random() * 20) + 1)
+  $('#purpleGem').attr('gem', Math.floor(Math.random() * 20) + 1)
   total = 0
   $(".total").text(total)
   goal = Math.floor(Math.random() * 100) + 20
