@@ -1,4 +1,8 @@
 let total = 0
+let wins = 0
+let losses = 0
+
+
 //show random value for goal and add to page
 let goal = Math.floor(Math.random() * 100) + 20
 $('.total').text(total)
@@ -18,20 +22,26 @@ $('.gem').on('click', function() {
   let crystalValue = $(this).attr('gem')
   total += parseInt(crystalValue)  
   $('.total').text(total)
-  console.log(this)
   gameStatus()
 })
 
+//function to give you status of the game and resets random number, total score and gem values
 function gameStatus () {
   if (goal === total) {
-    alert('You Win!')
-    reset ()
+    wins++
+    $('.wins').html(wins)
+    $('.message').html("You Win!")
+    setTimeout(reset, 2000);
   } else if (total > goal) {
-    alert('You Lose!')
-    reset()
+    losses++
+    $(".losses").html(losses)
+    $('.message').html("You lose, try again!")
+     setTimeout(reset, 2000);
   }
 }
 
+
+//function to reset the game
 function reset() {
   $('#redGem').attr('gem', Math.floor(Math.random() * 20) +1)
   $('#blueGem').attr('gem', Math.floor(Math.random() * 20) + 1)
@@ -41,4 +51,5 @@ function reset() {
   $(".total").text(total)
   goal = Math.floor(Math.random() * 100) + 20
   $('.randomNum').text(goal)
+  $('.message').html(" ")
 }

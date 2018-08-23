@@ -9,9 +9,16 @@ body {
 }
 
 .container {
-  max-width: 500px;
+  max-width: 450px;
   text-align: left;
   margin-left: 5px;
+}
+
+.crystalContainer {
+  max-width: 300px;
+  text-align: left;
+  margin-left: 5px;
+  justify-content: space-between;
 }
 
 #Instructions {
@@ -23,11 +30,28 @@ body {
 
 #randomNum {  
  margin-top: 5px;
- margin-left: 5px;
+ margin-left: 3px;
  height: 100px;
  width: 150px;
  padding: 0px;
  background-color: aliceblue;
+}
+
+.randomNum {
+  margin-left: 50px;
+
+}
+
+.total {
+  margin-left: 50px;
+}
+
+.wins {
+  margin-left: 50px;
+}
+
+.losses {
+  margin-left: 50px;
 }
 
 .score{
@@ -43,7 +67,7 @@ body {
   background-color: aliceblue;
   margin-left: 5px;
   text-align: left;
-  max-width: 200px;
+  max-width: 150px;
 }
 
 #scoreIs {
@@ -54,7 +78,7 @@ body {
 #total {
   margin-top: 10px;
   padding: 0px;
-  height: 150px;
-  width:150px;
+  height: 60px;
+  width:60px;
   text-align: left;
 }
