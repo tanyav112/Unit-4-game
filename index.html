@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Crystal Collector</title>
+  <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB'
+    crossorigin='anonymous'>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+
+<body>
+  <h1>Crystals Collector!</h1>
+  <h4>
+    <strong>Try and get to the random number by clicking on the crystals
+    </strong>
+  </h4>
+  <h4>
+    <strong>
+      <span class="message"></span>
+    </strong>
+  </h4>
+  <div class="container">
+      <div class="row score-row">
+      <div id="randomNum" class="col-sm">
+        <strong>Random Number:
+          <br>
+          <span class="randomNum"></span>
+        </strong>
+      </div>
+      <div id="Wins" class="score" class="col-sm">
+        <strong>Wins:
+          <br>
+          <span class="wins"></span>
+        </strong>
+      </div>
+      <div id="Losses" class="score" class="col-sm">
+        <strong>Losses:
+          <br>
+          <span class="losses"></span>
+        </strong>
+      </div>
+    </div>
+  </div>
+
+  <div class="crystalContainer">
+    <div class="row crystalRow">
+      <div class="col-sm">
+        <img id="redGem" class="gem" src="assets/images/redGem.jpg" alt="Red Gem">
+      </div>
+      <div class="col-sm">
+        <img id="blueGem" class="gem" src="assets/images/blueGem.jpg" alt="Blue Gem">
+      </div>
+      <div class="col-sm">
+        <img id="greenGem" class="gem" src="assets/images/greenGem.jpg" alt="Green Gem">
+      </div>
+      <div class="col-sm">
+        <img id="purpleGem" class="gem" src="assets/images/purpleGem.jpg" alt="Purple Gem">
+      </div>
+    </div>
+  </div>
+
+  <div class="scoreContainer">
+    <div class="col-sm" id="scoreIs">
+      <strong>Your total score is:</strong>
+    </div>
+    <div class="col-sm" id="total">
+      <strong>
+        <span class="total"></span>
+      </strong>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>
